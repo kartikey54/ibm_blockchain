@@ -1,21 +1,29 @@
-# ibm_blockchain
+# python_blockchain_app
 
-Developing a blockchain application from scratch in Python
+A simple tutorial for developing a blockchain application from scratch in Python.
 
-Explained in detail [here](https://www.ibm.com/developerworks/cloud/library/cl-develop-blockchain-app-in-python/index.html)
+## What is blockchain? How it is implemented? And how it works?
 
-### Instructions to run
+Please read the [step-by-step implementation tutorial](https://github.com/satwikkansal/python_blockchain_app/blob/master/step_by_step_tutorial.md) to get your answers :)
+
+## Instructions to run
+
+Clone the project,
+
+```sh
+$ git clone https://github.com/satwikkansal/python_blockchain_app.git
+```
 
 Start a blockchain node server,
 
 ```sh
->>> python node_server.py
+$ python node_server.py
 ```
 
-Run our application,
+Run the application,
 
 ```sh
->>> python run_app.py
+$ python run_app.py
 ```
 
 The application should be up and running at [http://localhost:5000](http://localhost:5000).
@@ -24,14 +32,14 @@ Here are a few screenshots
 
 1. Posting some content
 
-![image.png](https://github.com/satwikkansal/ibm_blockchain/raw/master/screenshots/1.png)
+![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/1.png)
 
 2. Requesting the node to mine
 
-![image.png](https://github.com/satwikkansal/ibm_blockchain/raw/master/screenshots/2.png)
+![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/2.png)
 
 3. Resyncing with the chain for updated data
 
-![image.png](https://github.com/satwikkansal/ibm_blockchain/raw/master/screenshots/3.png)
+![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/3.png)
 
-To play around by spinning off multiple custom nodes, use the `add_nodes/` endpoint to register a new node. To update the node with which the application syncs, change `CONNECTED_NODE_ADDRESS` field in the [views.py](https://github.com/satwikkansal/ibm_blockchain/blob/master/app/views.py) file.
+To play around by spinning off multiple custom nodes, use the `add_nodes/` endpoint to register a new node. To update the node with which the application syncs, change `CONNECTED_NODE_ADDRESS` field in the [views.py](https://github.com/satwikkansal/python_blockchain_app/blob/master/app/views.py) file.
